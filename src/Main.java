@@ -31,6 +31,36 @@ public class Main {
         var productWeight = vegetablesWeight + meatWeight + waterWeight + fruitWeight;
         System.out.println("Общий вес продуктов " + productWeight + " кг!");
 
+        var leftWeight = liftingCapasity - stuffWeight - productWeight;
+        System.out.println("места осталось " + leftWeight + "кг!");
+
+        productWeight = productWeight * 2;
+        System.out.println("Теперь вес продуктов " + productWeight + "кг!");
+
+        leftWeight = liftingCapasity - stuffWeight - productWeight;
+        System.out.println("теперь места осталось " + leftWeight + " кг!");
+
+        var overLoad = (stuffWeight + productWeight) % liftingCapasity;
+        System.out.println("перегруз на " + overLoad + "кг!");
+
+        var productInOneCar = productWeight / 2;
+        System.out.println("Продуктов на одной машине теперь " + productInOneCar + " кг!");
+
+        short bananas = 126;
+        System.out.println("вес бананов " + bananas + " кг!");
+
+        float sugar = 3;
+        float onePortion = sugar / 4;
+        System.out.println("Одна порция весит " + onePortion + " кг!");
+
+        byte a = 1;
+        short b = 1;
+        int c = 1;
+        int d = a + b + c;
+        System.out.println(d);
+
+        float g = a + 1f;
+        System.out.println(g);
 
     }
 }
